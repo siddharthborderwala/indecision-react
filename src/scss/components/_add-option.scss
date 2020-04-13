@@ -1,0 +1,39 @@
+.add-option {
+	padding: $m-size;
+
+	&__err {
+		color: $color-off-white;
+		font-style: italic;
+		margin: 0 0 $m-size;
+	}
+
+	&__form {
+		display: flex;
+
+		@media only screen and (max-width: $bp-sm){
+			flex-direction: column;
+		}
+
+		&--input {
+			flex: 1;
+			margin-right: $s-size;
+			background-color: $color-body-back;
+			border: none;
+			border-bottom: .3rem solid darken($color-body-back, 10%);
+			padding: $s-size;
+			color: $color-off-white;
+			caret-color: #4d90fe;
+			border-radius: 0;
+
+			&::placeholder {
+				color: lighten($color-light-blue, 10%);
+			}
+
+			@media only screen and (max-width: $bp-sm){
+				margin-right: 0;
+				margin-bottom: $m-size;
+				padding: $m-size;
+			}
+		}
+	}
+}

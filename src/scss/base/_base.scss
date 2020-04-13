@@ -1,0 +1,30 @@
+html {
+	font-size: 62.5%;
+
+	@media only screen and (max-width: $bp-md){
+		font-size: 56.25%;
+	}
+
+	@media only screen and (max-width: $bp-sm){
+		font-size: 50%;
+	}
+
+	@media only screen and (max-width: $bp-xs){
+		font-size: 43.75%;
+	}
+}
+
+body {
+	font-family: 'Product Sans', sans-serif;
+	font-size: 1.6rem;
+	box-sizing: border-box;
+	background-color: $color-body-back;
+}
+
+button {
+	cursor: pointer;
+
+	&:disabled {
+		cursor: not-allowed;
+	}
+}

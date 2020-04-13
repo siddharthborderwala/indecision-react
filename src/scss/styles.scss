@@ -1,0 +1,36 @@
+// -> IMPORTS
+
+// -> base
+@import "./base/settings";
+@import "./base/base";
+
+// -> components
+@import "./components/container";
+@import "./components/header";
+@import "./components/button";
+@import "./components/widget";
+@import "./components/option";
+@import "./components/add-option";
+@import "./components/modal";
+
+// -> fonts
+@font-face {
+	src: url("./../fonts/ProductSansRegular.woff2") format('woff2');
+	font-family: 'Product Sans', sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	src: url("./../fonts/ProductSansBold.woff2") format('woff2');
+	font-family: 'Product Sans', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	src: url("./../fonts/ProductSansItalic.woff2") format('woff2');
+	font-family: 'Product Sans', sans-serif;
+	font-weight: 500;
+	font-style: italic;
+}
